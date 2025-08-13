@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Foodio</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Foodio</h1>
+    <p>Delicious meals delivered to your door.</p>
+    <a href="#" class="btn">Order Now</a>
+  </section>
+
+  <section class="menu-section">
+    <h2>Main Items</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="burger.jpeg" alt="Burger">
+        <h3>Burger</h3>
+        <p class="price">₹200</p>
+        <button onclick="addToCart('Burger', 200)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="pizza.jpeg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p class="price">₹350</p>
+        <button onclick="addToCart('Pizza', 350)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="Pasta2.jpeg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p class="price">₹250</p>
+        <button onclick="addToCart('Pasta', 250)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Sides</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="Fries.jpeg" alt="Fries">
+        <h3>Fries</h3>
+        <p class="price">₹100</p>
+        <button onclick="addToCart('Fries', 100)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="garlic bread.jpeg" alt="Garlic Bread">
+        <h3>Garlic Bread</h3>
+        <p class="price">₹180</p>
+        <button onclick="addToCart('Garlic Bread', 180)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="Salad.jpeg" alt="Salad">
+        <h3>Salad</h3>
+        <p class="price">₹150</p>
+        <button onclick="addToCart('Salad', 150)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Drinks</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="Cola.jpeg" alt="Cola">
+        <h3>Cola</h3>
+        <p class="price">₹100</p>
+        <button onclick="addToCart('Cola', 100)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="lemonade.jpeg" alt="Juice">
+        <h3>Juice</h3>
+        <p class="price">₹120</p>
+        <button onclick="addToCart('Juice', 120)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="water.jpeg" alt="Water">
+        <h3>Water</h3>
+        <p class="price">₹40</p>
+        <button onclick="addToCart('Water', 40)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+<div class="cart-container">
+  <h3>Your Cart (<span id="cart-count">0</span>)</h3>
+  <ul id="cart-items"></ul>
+  <p id="total-price">Total: ₹0</p>
+  <button id="checkout-btn">Checkout</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
